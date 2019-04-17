@@ -1,0 +1,144 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.blue-btn{
+  background: #06B4FE;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 60px;
+  border-radius: 5px;
+  box-shadow: 0 9px 17px rgba(0, 0, 0, .11);
+  cursor: pointer;
+}
+
+.login-section{
+  background: #fff;
+}
+
+.login-section-header{
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+  justify-content: flex-start
+}
+
+.login-section-header-img{
+  width: 30px;
+  height: 25px;
+  margin-left: 30px;
+}
+
+.login-section-main{
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+}
+
+.login-section-main-info{
+  width: 40%;
+  min-width: 280px;
+  background: rgba(202, 209, 222, .17);
+  padding: 40px;
+}
+
+.login-section-main-info h3{
+  color: #06B4FE;
+  font-size:40px;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+.login-section-main-info p{
+  color: #777E8E;
+  margin-bottom: 30px;
+  font-size: 24px;
+  width: 60%;
+  line-height: 150%;
+}
+
+.login-section-main-info-form{
+  margin: 60px 0 40px;
+}
+
+.login-section-main-info-form-div{
+  margin: 0;
+  background: none;
+  position: relative;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, .11);
+}
+
+.login-section-main-info-form-div:last-of-type{
+  border-top: none;
+}
+
+.login-section-main-info-form-div span{
+  color: rgba(160, 170, 190, .68);
+  font-size: 16px;
+  position: absolute;
+  top:12px;
+  left: 16px;
+  z-index: 3;
+}
+
+.login-section-main-info-form-div input{
+  background: #fff;
+  border: none;
+  outline: none;
+  color: #777E8E;
+  padding: 10px;
+  padding-top: 40px;
+  font-size: 24px;
+  width: 96%;
+  position: relative;
+  border : 1px solid rgba(160, 170, 190, .44);
+  z-index: 2;
+}
+
+.login-section-main-info-form-div input:focus {
+  border-left: 4px solid #06B4FE;
+  width: calc(96% - 3px);
+}
+
+.login-section-main-info-form button{
+  margin-top: 80px;
+}
+
+.login-section-main-img{
+  height: 550px;
+  width: 60%;
+}
+
+.login-section-main-img svg{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  .login-section-main-info h3{
+    font-size: 30px;
+  }
+  .login-section-main-info p, .login-section-main-info-form-div input{
+    font-size: 20px;
+  }
+
+  .login-section-main-info-form-div span{
+    font-size: 14px;
+  }
+
+  .login-section-main-info-form button{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .login-section-main-img{
+    width: 0%;
+  }
+
+  .login-section-main-info{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
