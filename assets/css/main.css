@@ -693,17 +693,20 @@ body{
 
 .notifications-div-wrapper, .modal-div-wrapper{
   position: fixed;
-  top: 0;
+  top: -100vw;
   background: rgba(255, 255, 255, .9);
   left: 0;
   z-index: 300;
   width: 100vw;
   height: 100vh;
-  display: none;
+  opacity: 0;
+  transition: opacity .5s linear;
 }
 
-.show-notifications{
-  display: block;
+.show-notifications, .show-modal{
+  top: 0;
+  opacity: 1;
+  transition: opacity .5s linear;
 }
 
 .notifications-div{
@@ -1472,10 +1475,6 @@ body{
   min-width: 100px;
 }
 
-}
-
-.show-modal{
-  display: block;
 }
 
 .modal-div{
