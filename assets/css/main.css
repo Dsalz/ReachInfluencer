@@ -391,6 +391,12 @@ body{
     display: block
   }
 
+  .dashboard-nav-dropdown-toggle svg{
+    height: 20px;
+    width: 20px;
+    padding-top: 10px;
+  }
+
   .dashboard-nav-dropdown-toggle hr {
     border: 2px solid #06B4FE;
     width: 30px;
@@ -507,8 +513,9 @@ body{
     top: -12px;
   }
   .dashboard-main{
-    width: calc(100% - 40px);
-    margin-left: 0;
+    width: calc(100% - 20px);
+    margin: 0;
+    padding: 120px 10px 20px;
   }
 
   .dashboard-select{
@@ -519,6 +526,11 @@ body{
 @media screen and (max-width: 600px){
   .dashboard-nav-search-input input{
     width: 85%;
+    font-size: 14px;
+  }
+
+  .dashboard-nav-search-input{
+    margin-left: 0;
   }
 }
 
@@ -624,7 +636,7 @@ body{
 }
 
 
-@media screen and (max-width: 1410px){
+@media screen and (max-width: 1417px){
   .dashboard-cards-wrapper{
     max-width: 740px;
   }
@@ -633,17 +645,6 @@ body{
 @media screen and (max-width: 1042px){
   .dashboard-cards-wrapper{
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 400px){
-  .dashboard-card{
-    padding: 10px;
-    transform: scale(.7);
-    margin: -15px 10px;
-  }
-  .dashboard-card-info {
-    width: 180px;
   }
 }
 
@@ -1240,18 +1241,6 @@ body{
   }
 }
 
-@media screen and (max-width: 520px){
-  .messages-chat-section-header{
-    transform: scale(.4);
-    right: -200px;
-  }
-
-  .notifications-div{
-    transform: scale(.6);
-    top: -10px;
-  }
-}
-
 .dashboard-main-section-header{
   color: #42505C;
   font-size: 20px;
@@ -1367,7 +1356,7 @@ body{
 
 .contract-item-info-influencers{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .contract-item-info-influencers img{
@@ -1418,11 +1407,13 @@ body{
   display: flex;
   width: fit-content;
   position: relative;
+  height: 70px;
 }
 
 @media screen and (max-width: 700px){
   .contract-item{
     flex-wrap: wrap;
+    margin: 40px auto 70px;
   }
 
 .contract-item-data{
@@ -1431,6 +1422,15 @@ body{
   padding-right: 0;
   text-align: center;
   order: 1;
+}
+
+.dashboard-main-section-header{
+  margin-left: 0;
+  text-align: center;
+}
+
+.dashboard-main-section-card h4{
+  text-align: center;
 }
 
 .contract-item-info-wrapper{
@@ -1445,6 +1445,10 @@ body{
   right: 0;
   margin: 0 auto;
   text-align: center;
+}
+
+.contract-item-desc{
+  min-width: 100px;
 }
 
 }
@@ -1827,4 +1831,102 @@ body{
 
 .note-item .dashboard-form-inputs .dashboard-form-btn{
   margin-top: 10px;
+}
+
+@media screen and (max-width: 520px){
+  .messages-chat-section-header{
+    transform: scale(.4);
+    right: -200px;
+  }
+
+  .notifications-div{
+    transform: scale(0.6);
+    top: -31px;
+    left: -75px;
+  }
+
+  .dashboard-main-section-card{
+    width: 96%;
+  }
+
+  .dashboard-form-inputs label{
+    font-size: 14px;
+  }
+
+  .dashboard-form-inputs{
+    padding: 20px;
+  }
+
+.dashboard-form{
+  min-width: 250px;
+}
+
+.advanced-search-section{
+  padding: 6% 4%;
+  width: 92%;
+}
+
+.search-item{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-item-stats{
+  width: 33%;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.search-item-person{
+  justify-content: center;
+  width: 100%
+}
+
+.search-item button{
+  margin-bottom: 30px;
+}
+
+.search-input input{
+  width: fit-content;
+  width: calc(100% - 50px);
+  padding: 0 10px;
+}
+
+.search-input{
+  height: 60px;
+}
+
+.search-input svg{
+  right: 6%;
+}
+
+.connect-socials-section h5, .connect-socials-section-item p{
+  font-size: 16px;
+}
+
+.connect-socials-section p{
+  font-size: 14px;
+}
+
+.connect-socials-section, .faq-section{
+  width: 90%;
+}
+}
+
+
+@media screen and (max-width: 400px){
+  .dashboard-cards-wrapper{
+    transform: scale(.8);
+    margin: -150px auto;
+  }
+  .dashboard-card{
+    padding: 10px;
+  }
+  .dashboard-card-info {
+    width: 180px;
+  }
+
+  .dashboard-card-dropdown{
+    top: 170px;
+  }
 }
