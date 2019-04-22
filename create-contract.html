@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Create Contract | ReachInfluencer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="assets/css/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Dashboard navbar -->
+      <nav class="dashboard-nav" id="dashboard-nav">
+        <section class="dashboard-nav-logo">
+          <a href="./landing.html">
+            <img src="assets/img/mock-Logo.png" alt="ReachInfluencer Logo" />
+            <p>ReachInfluencer</p>
+          </a>
+        </section>
+        <section class="dashboard-nav-search">
+          <section class="dashboard-nav-search-input">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.38" height="16.966" viewBox="0 0 16.38 16.966">
+              <path id="search" d="M17.115,15.453l-4.038-4.2A6.847,6.847,0,1,0,7.834,13.7a6.777,6.777,0,0,0,3.924-1.24l4.069,4.232a.893.893,0,1,0,1.288-1.239ZM7.834,1.787A5.063,5.063,0,1,1,2.771,6.85,5.069,5.069,0,0,1,7.834,1.787Z" transform="translate(-0.984)" fill="#919bb0"/>
+            </svg>
+            <input type="text" placeholder="Search Influencers Here.."/>
+          </section>
+          <section class="dashboard-nav-search-link">          
+            <a>Advanced Search</a>
+          </section>
+        </section>
+        <section class="dashboard-nav-links">
+          <a title="notifications" id="notifications-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20.119" height="24.845" viewBox="0 0 20.119 24.845">
+                <g id="Group_324" data-name="Group 324" transform="matrix(0.995, 0.105, -0.105, 0.995, -1444.599, -252.748)">
+                  <path id="ic_notifications_24px" d="M12,22a2.006,2.006,0,0,0,2-2H10A2,2,0,0,0,12,22Zm6-6V11c0-3.07-1.64-5.64-4.5-6.32V4a1.5,1.5,0,0,0-3,0v.68C7.63,5.36,6,7.92,6,11v5L4,18v1H20V18Z" transform="translate(1459.39 103.687) rotate(-7)" fill="rgba(160,170,190,0.54)"/>
+                  <g id="Ellipse_46" data-name="Ellipse 46" transform="translate(1470.996 99.743) rotate(-7)" fill="#1890ff" stroke="#fff" stroke-width="2">
+                    <circle cx="6" cy="6" r="6" stroke="none"/>
+                    <circle cx="6" cy="6" r="5" fill="none"/>
+                  </g>
+                </g>
+              </svg>
+          </a>
+          <div class="dashboard-nav-links-profile">
+            <img src="assets/img/dummyProfilePhoto.jpeg" alt="ReachInfluencer Profile Picture" />
+            <p>John Clark</p>
+          </div>
+          <a id="logout-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19.852" height="19.853" viewBox="0 0 19.852 19.853">
+                <g id="logout" transform="translate(-1.38 1.093) rotate(-7)">
+                  <g id="Group_323" data-name="Group 323" transform="translate(1.503 -0.916) rotate(7)">
+                    <g id="Group_322" data-name="Group 322" transform="translate(0)">
+                      <g id="Group_321" data-name="Group 321">
+                        <path id="Path_1953" data-name="Path 1953" d="M8.208,2.992a.836.836,0,0,0-.179-.27L5.548.242a.827.827,0,0,0-1.17,1.17l1.07,1.07H.827a.827.827,0,1,0,0,1.654H5.448l-1.07,1.07a.827.827,0,1,0,1.17,1.17L8.029,3.894a.819.819,0,0,0,.179-.27A.828.828,0,0,0,8.208,2.992Z" transform="translate(11.581 5.791)" fill="#a0aabe"/>
+                        <path id="Path_1954" data-name="Path 1954" d="M14.063,11.581a.827.827,0,0,0-.827.827v4.136H9.927V3.309a.828.828,0,0,0-.59-.792L6.464,1.654h6.772V5.791a.827.827,0,0,0,1.654,0V.827A.827.827,0,0,0,14.063,0H.827A.737.737,0,0,0,.742.016.817.817,0,0,0,.391.138C.373.15.351.151.333.164S.324.178.318.183A.82.82,0,0,0,.1.444.676.676,0,0,0,.074.514.785.785,0,0,0,.009.707a.515.515,0,0,0,0,.072C.011.8,0,.811,0,.827V17.371a.827.827,0,0,0,.665.811l8.272,1.654a.77.77,0,0,0,.162.017.828.828,0,0,0,.827-.827V18.2h4.136a.827.827,0,0,0,.827-.827V12.408A.827.827,0,0,0,14.063,11.581Z" fill="#a0aabe"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>  
+          </a>  
+        </section>
+        <section class="dashboard-nav-dropdown-toggle" id="dashboard-nav-toggle">
+          <hr />
+          <hr />
+          <hr />
+        </section>
+      </nav>
+      <!-- Notifications section -->
+      <div class="notifications-div-wrapper" id="notifications-wrapper">
+        <div class="notifications-div" id="notifications-div">
+          <a class="notifications-div-item">
+            <img src="assets/img/cardi.jpg" class="notifications-div-item-img" alt="influencer">
+            <p class="notifications-div-item-info">
+              <span class="notifications-div-item-info-name">Cardi B</span> replied your message regarding the iMac contract
+            </p>
+            <span class="notifications-div-item-time">
+              3 mins
+            </span>
+          </a>
+          <a class="notifications-div-item">
+            <img src="assets/img/cardi.jpg" class="notifications-div-item-img" alt="influencer">
+            <p class="notifications-div-item-info">
+              <span class="notifications-div-item-info-name">Cardi B</span> replied your message regarding the iMac contract
+            </p>
+            <span class="notifications-div-item-time">
+              3 mins
+            </span>
+          </a>
+          <a class="notifications-div-item">
+            <img src="assets/img/cardi.jpg" class="notifications-div-item-img" alt="influencer">
+            <p class="notifications-div-item-info">
+              You've got a new message from 
+              <span class="notifications-div-item-info-name">Ivanka Trump</span> 
+            </p>
+            <span class="notifications-div-item-time">
+              3 mins
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- Dashboard sidebar -->
+      <aside class="dashboard-sidebar" id="dashboard-sidebar">
+        <div class="dashboard-sidebar-toggle" id="toggle-sidebar">
+          <hr />
+          <hr />
+          <hr />
+        </div>
+        <div class="dashboard-sidebar-info">
+          <button class="blue-btn">
+            Create Contract
+          </button>
+          <section class="sidebar-option">
+            <h3 class="sidebar-option-header">Contracts</h3>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Active Contracts</p>
+            </a>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>All Contracts</p>
+            </a>
+          </section>
+          <section class="sidebar-option">
+            <h3 class="sidebar-option-header">Tools</h3>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Notes</p>
+            </a>
+          </section>
+          <section class="sidebar-option">
+            <h3 class="sidebar-option-header">Manage Influencers</h3>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Analytics</p>
+            </a>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Favorites</p>
+            </a>
+          </section>
+          <section class="sidebar-option">
+            <h3 class="sidebar-option-header">Settings</h3>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Edit Profile</p>
+            </a>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Connect Social Accounts</p>
+            </a>
+          </section>
+          <section class="sidebar-option">
+            <h3 class="sidebar-option-header">Support</h3>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>FAQ</p>
+            </a>
+            <a href="#" class="sidebar-option-link">
+              <span></span>
+              <p>Contact Us</p>
+            </a>
+          </section>
+          <a class="sidebar-option-logout" href="#">
+            Logout
+          </a>
+        </div>
+      </aside>
+      <!-- Dashboard main section -->
+      <main class="dashboard-main">
+        <section class="dashboard-main-section">
+          <section class="dashboard-main-section-card">
+            <form class="dashboard-form">
+              <div class="dashboard-form-inputs">
+                <label for="contract-name">
+                  Contract Name
+                </label>
+                <input id="contract-name" type="text" />
+                <label for="range">
+                  Range <span>(number of days)</span>
+                </label>
+                <input id="range" type="text" />
+                <label for="price">
+                  Price
+                </label>
+                <input id="price" type="number" />
+                <label for="notes">
+                  Notes
+                </label>
+                <textarea placeholder="Add notes and thoughts here" ></textarea>
+              </div>
+              <button type="submit" class="dashboard-form-btn blue-btn">
+                Create Contract
+              </button>
+            </form>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

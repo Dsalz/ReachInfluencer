@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_388" data-name="Group 388" transform="translate(4799 -805)">
+    <circle id="Ellipse_29" data-name="Ellipse 29" cx="24" cy="24" r="24" transform="translate(-4799 805)" fill="#06b4fe"/>
+    <path id="ic_people_24px" d="M16,11a3,3,0,1,0-3-3A2.987,2.987,0,0,0,16,11ZM8,11A3,3,0,1,0,5,8,2.987,2.987,0,0,0,8,11Zm0,2c-2.33,0-7,1.17-7,3.5V19H15V16.5C15,14.17,10.33,13,8,13Zm8,0c-.29,0-.62.02-.97.05A4.22,4.22,0,0,1,17,16.5V19h6V16.5C23,14.17,18.33,13,16,13Z" transform="translate(-4787 817)" fill="#f9f9f9"/>
+  </g>
+</svg>
