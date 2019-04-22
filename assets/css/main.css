@@ -21,7 +21,7 @@ body{
 .login-section-header{
   display: flex;
   width: 90%;
-  margin: 50px auto;
+  margin: 40px auto;
   justify-content: flex-start
 }
 
@@ -272,6 +272,11 @@ body{
   font-size: 14px;
   box-shadow: 0 3px 10px #06B4FE;
   margin: 0 30px;
+}
+
+.dashboard-sidebar .blue-btn a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .dashboard-nav-dropdown-toggle{
